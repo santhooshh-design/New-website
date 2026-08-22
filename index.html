@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fluxa — B2B Payments Infrastructure</title>
+<meta name="description" content="Fluxa is the payments platform for B2B finance teams — automate approvals, reconcile in real time, and pay vendors worldwide from one secure platform.">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="skip-link"><a href="#main">Skip to content</a></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a href="#top" class="logo" aria-label="Fluxa home">
+      <span class="logo-mark" aria-hidden="true"></span>
+      Fluxa
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <a href="#product">Product</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#customers">Customers</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="#" class="link-btn">Log in</a>
+      <a href="#demo" class="btn btn-primary btn-sm">Request a demo</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero" id="top">
+    <div class="hero-bg" aria-hidden="true"></div>
+    <div class="container hero-inner">
+      <div class="hero-copy" data-animate>
+        <span class="eyebrow">
+          <span class="dot"></span>
+          Now processing payouts in 40+ countries
+        </span>
+        <h1>Payments infrastructure, <span class="text-accent">built for B2B</span>.</h1>
+        <p class="hero-sub">
+          Automate approvals, reconcile transactions in real time, and pay vendors
+          worldwide — all from one secure platform built for finance and ops teams.
+        </p>
+        <div class="hero-cta">
+          <a href="#demo" class="btn btn-primary btn-lg">Request a demo</a>
+          <a href="#product" class="btn btn-ghost btn-lg">
+            <svg class="icon" viewBox="0 0 24 24" fill="none"><path d="M8 5.5v13l11-6.5-11-6.5Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            See how it works
+          </a>
+        </div>
+        <p class="hero-trust">Trusted by finance teams at 500+ companies</p>
+      </div>
+
+      <div class="hero-visual" data-animate data-animate-delay="1">
+        <div class="glow glow--1" aria-hidden="true"></div>
+        <div class="glow glow--2" aria-hidden="true"></div>
+
+        <div class="hero-visual-stack">
+        <div class="dashboard-card float-slow">
+          <div class="dashboard-card__header">
+            <div class="avatar avatar--gradient" aria-hidden="true"></div>
+            <div>
+              <p class="dc-name">Acme Manufacturing</p>
+              <p class="dc-sub">Operating account · USD</p>
+            </div>
+            <span class="pill pill--live"><span class="pill-dot"></span>Live</span>
+          </div>
+
+          <div class="dashboard-card__balance">
+            <span class="label">Available balance</span>
+            <h3 class="js-count" data-count="1248560" data-prefix="$" data-decimals="2">$0.00</h3>
+            <span class="delta delta--up">▲ 4.8% this month</span>
+          </div>
+
+          <div class="dashboard-chart" aria-hidden="true">
+            <div class="bar" style="--h:38%"></div>
+            <div class="bar" style="--h:55%"></div>
+            <div class="bar" style="--h:44%"></div>
+            <div class="bar" style="--h:70%"></div>
+            <div class="bar" style="--h:52%"></div>
+            <div class="bar bar--active" style="--h:88%"></div>
+            <div class="bar" style="--h:60%"></div>
+          </div>
+
+          <div class="dashboard-list">
+            <div class="d-row">
+              <span class="row-icon row-icon--out">↑</span>
+              <div class="row-info">
+                <p>Vendor payout — Nord Supplies</p>
+                <span>Today · 10:42 AM</span>
+              </div>
+              <span class="row-amount row-amount--neg">-$24,500.00</span>
+            </div>
+            <div class="d-row">
+              <span class="row-icon row-icon--in">↓</span>
+              <div class="row-info">
+                <p>Invoice paid — Halcyon Ltd</p>
+                <span>Today · 09:15 AM</span>
+              </div>
+              <span class="row-amount row-amount--pos">+$58,200.00</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="float-card float-card--approval float-fast" data-animate data-animate-delay="2">
+          <span class="check-badge">✓</span>
+          <div>
+            <p class="fc-title">Payment approved</p>
+            <span class="fc-sub">by Priya · Finance Lead</span>
+          </div>
+        </div>
+
+        <div class="float-card float-card--donut float-medium" data-animate data-animate-delay="3">
+          <div class="donut" style="--p:68%" aria-hidden="true"></div>
+          <div>
+            <p class="fc-title">Spend by category</p>
+            <span class="fc-sub">68% Vendors</span>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= LOGO STRIP ================= -->
+  <section class="logo-strip" aria-label="Trusted by">
+    <div class="container">
+      <p class="logo-strip__label" data-animate>Trusted by finance and ops teams at</p>
+    </div>
+    <div class="marquee" data-animate>
+      <div class="marquee-track">
+        <span>NORTHPEAK</span><span>VELOR&nbsp;INDUSTRIES</span><span>ARCADIA</span><span>HALCYON</span><span>MERIDIAN&nbsp;CO.</span><span>OBERON</span>
+        <span>NORTHPEAK</span><span>VELOR&nbsp;INDUSTRIES</span><span>ARCADIA</span><span>HALCYON</span><span>MERIDIAN&nbsp;CO.</span><span>OBERON</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATS ================= -->
+  <section class="stats">
+    <div class="container stats-grid">
+      <div class="stat" data-animate>
+        <h3 class="js-count" data-count="2100000000" data-prefix="$" data-suffix="+">$0</h3>
+        <p>Processed annually</p>
+      </div>
+      <div class="stat" data-animate data-animate-delay="1">
+        <h3 class="js-count" data-count="500" data-suffix="+">0</h3>
+        <p>Companies onboarded</p>
+      </div>
+      <div class="stat" data-animate data-animate-delay="2">
+        <h3 class="js-count" data-count="40" data-suffix="+">0</h3>
+        <p>Countries supported</p>
+      </div>
+      <div class="stat" data-animate data-animate-delay="3">
+        <h3 class="js-count" data-count="99.99" data-decimals="2" data-suffix="%">0%</h3>
+        <p>Platform uptime</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= STATEMENT ================= -->
+  <section class="statement" id="solutions">
+    <div class="container">
+      <div class="blob" data-animate aria-hidden="true"></div>
+      <h2 data-animate>
+        From invoicing to global payouts — everything your finance
+        team needs lives in <span class="text-accent">one platform</span>.
+      </h2>
+    </div>
+  </section>
+
+  <!-- ================= FEATURE SPLIT ================= -->
+  <section class="feature-split" id="product">
+    <div class="container feature-split__inner">
+      <div class="approvals-card float-slow" data-animate>
+        <div class="approvals-card__header">
+          <p>Pending approvals</p>
+          <span class="pill pill--muted">3 waiting</span>
+        </div>
+        <div class="approval-row" data-animate data-animate-delay="1">
+          <span class="avatar avatar--sm" style="background:#ffd9a8">JM</span>
+          <div class="row-info">
+            <p>Freight &amp; Logistics Ltd.</p>
+            <span>Bulk payout · 12 invoices</span>
+          </div>
+          <span class="row-amount">$142,300</span>
+          <button class="mini-btn" aria-label="Approve">✓</button>
+        </div>
+        <div class="approval-row" data-animate data-animate-delay="2">
+          <span class="avatar avatar--sm" style="background:#c7e0ff">AS</span>
+          <div class="row-info">
+            <p>Contractor payroll — EU</p>
+            <span>Recurring · Monthly</span>
+          </div>
+          <span class="row-amount">$88,050</span>
+          <button class="mini-btn" aria-label="Approve">✓</button>
+        </div>
+        <div class="approval-row" data-animate data-animate-delay="3">
+          <span class="avatar avatar--sm" style="background:#d6f5e3">RK</span>
+          <div class="row-info">
+            <p>Marketing vendor — APAC</p>
+            <span>One-time · Wire</span>
+          </div>
+          <span class="row-amount">$21,940</span>
+          <button class="mini-btn" aria-label="Approve">✓</button>
+        </div>
+      </div>
+
+      <div class="feature-copy">
+        <h2 data-animate>Built for simplicity. Designed for scale.</h2>
+        <p data-animate data-animate-delay="1">
+          Fluxa brings approvals, reconciliation, and payouts into one elegant
+          workflow — so finance teams move faster with confidence, at any size.
+        </p>
+
+        <div class="feature-grid">
+          <div class="feature-item" data-animate data-animate-delay="1">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M13 2 3 14h7l-1 8 10-12h-7l1-8Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Real-time reconciliation</h4>
+            <p>Match transactions the moment they settle — no end-of-month scramble.</p>
+          </div>
+          <div class="feature-item" data-animate data-animate-delay="2">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 4 6v6c0 5 3.4 8.7 8 9 4.6-.3 8-4 8-9V6l-8-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <h4>Bank-grade security</h4>
+            <p>SOC 2 Type II, encrypted at rest and in transit, SSO &amp; audit logs.</p>
+          </div>
+          <div class="feature-item" data-animate data-animate-delay="3">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="9" cy="8" r="3" stroke="currentColor" stroke-width="1.6"/><path d="M2 20c0-3.3 3.1-6 7-6s7 2.7 7 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><circle cx="17" cy="8" r="2.5" stroke="currentColor" stroke-width="1.6"/><path d="M16 14.2c2.9.5 5 2.6 5 5.3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+            </span>
+            <h4>Role-based approvals</h4>
+            <p>Custom limits and multi-step sign-off, mapped to your org chart.</p>
+          </div>
+          <div class="feature-item" data-animate data-animate-delay="4">
+            <span class="feature-icon">
+              <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.6 4 6 4 9s-1.5 6.4-4 9c-2.5-2.6-4-6-4-9s1.5-6.4 4-9Z" stroke="currentColor" stroke-width="1.6"/></svg>
+            </span>
+            <h4>Instant global payouts</h4>
+            <p>Pay vendors in 40+ countries in local currency, same day.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING ================= -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-animate>Flexible pricing, built for every business</h2>
+        <p data-animate data-animate-delay="1">Start free. Upgrade as your payment volume grows.</p>
+      </div>
+
+      <div class="pricing-toggle" data-animate>
+        <span class="toggle-label" id="labelMonthly">Monthly</span>
+        <button class="switch" id="billingSwitch" role="switch" aria-checked="false" aria-label="Toggle yearly billing">
+          <span class="switch-knob"></span>
+        </button>
+        <span class="toggle-label" id="labelYearly">Yearly <span class="save-badge">Save 20%</span></span>
+      </div>
+
+      <div class="pricing-grid">
+        <div class="price-card" data-animate>
+          <h3>Starter</h3>
+          <p class="price-desc">For small teams getting started</p>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="price-monthly">0</span><span class="price-yearly hidden">0</span>
+            <span class="period">/mo</span>
+          </div>
+          <a href="#demo" class="btn btn-outline btn-block">Get started</a>
+          <ul class="price-features">
+            <li>Up to 25 payments / month</li>
+            <li>Single approval workflow</li>
+            <li>Standard support</li>
+            <li>1 connected bank account</li>
+          </ul>
+        </div>
+
+        <div class="price-card price-card--featured" data-animate data-animate-delay="1">
+          <span class="popular-badge">Most popular</span>
+          <h3>Growth</h3>
+          <p class="price-desc">For scaling finance operations</p>
+          <div class="price-amount">
+            <span class="currency">$</span><span class="price-monthly">49</span><span class="price-yearly hidden">39</span>
+            <span class="period">/mo</span>
+          </div>
+          <a href="#demo" class="btn btn-primary btn-block">Start free trial</a>
+          <ul class="price-features">
+            <li>Unlimited payments</li>
+            <li>Multi-step approvals</li>
+            <li>Priority support</li>
+            <li>Unlimited bank accounts</li>
+            <li>Real-time reconciliation</li>
+          </ul>
+        </div>
+
+        <div class="price-card" data-animate data-animate-delay="2">
+          <h3>Enterprise</h3>
+          <p class="price-desc">For global payment operations</p>
+          <div class="price-amount">
+            <span class="price-custom">Custom</span>
+          </div>
+          <a href="#demo" class="btn btn-outline btn-block">Contact sales</a>
+          <ul class="price-features">
+            <li>Everything in Growth</li>
+            <li>Dedicated account manager</li>
+            <li>Custom approval limits</li>
+            <li>SSO &amp; SCIM provisioning</li>
+            <li>99.99% uptime SLA</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TESTIMONIALS ================= -->
+  <section class="testimonials" id="customers">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-animate>Trusted by finance leaders everywhere</h2>
+      </div>
+      <div class="testimonial-grid">
+        <figure class="testimonial-card" data-animate>
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>“Fluxa cut our month-end close from five days to one. Reconciliation used to be our biggest bottleneck — now it's automatic.”</blockquote>
+          <figcaption>
+            <span class="avatar avatar--sm" style="background:#c7e0ff">SM</span>
+            <div>
+              <p class="t-name">Sara Mitchell</p>
+              <span class="t-role">CFO, Northpeak</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card" data-animate data-animate-delay="1">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>“We pay vendors in 14 countries. Fluxa's approval routing means nothing ships without the right sign-off — and it's fast.”</blockquote>
+          <figcaption>
+            <span class="avatar avatar--sm" style="background:#ffd9a8">DK</span>
+            <div>
+              <p class="t-name">David Kim</p>
+              <span class="t-role">Head of Ops, Arcadia</span>
+            </div>
+          </figcaption>
+        </figure>
+        <figure class="testimonial-card" data-animate data-animate-delay="2">
+          <div class="stars" aria-hidden="true">★★★★★</div>
+          <blockquote>“Implementation took two weeks, not two quarters. Their team actually understood how B2B finance works.”</blockquote>
+          <figcaption>
+            <span class="avatar avatar--sm" style="background:#d6f5e3">RP</span>
+            <div>
+              <p class="t-name">Renata Paz</p>
+              <span class="t-role">VP Finance, Meridian Co.</span>
+            </div>
+          </figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="faq" id="faq">
+    <div class="container">
+      <div class="section-head">
+        <h2 data-animate>Frequently asked questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item" data-animate open>
+          <summary>How long does implementation take?</summary>
+          <p>Most teams go live within two to three weeks, including bank connections, approval workflows, and team onboarding. Our implementation team works alongside yours the entire way.</p>
+        </details>
+        <details class="faq-item" data-animate data-animate-delay="1">
+          <summary>Is Fluxa secure and compliant?</summary>
+          <p>Yes. Fluxa is SOC 2 Type II certified, encrypts data at rest and in transit, and supports SSO, SCIM, and detailed audit logs for every transaction and approval.</p>
+        </details>
+        <details class="faq-item" data-animate data-animate-delay="2">
+          <summary>Which countries and currencies do you support?</summary>
+          <p>Fluxa supports payouts to 40+ countries in local currency, with more added regularly. Enterprise plans can request custom corridors.</p>
+        </details>
+        <details class="faq-item" data-animate data-animate-delay="3">
+          <summary>Can Fluxa integrate with our existing ERP?</summary>
+          <p>Fluxa integrates with major ERP and accounting systems out of the box, plus a full REST API and webhooks for custom workflows.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FINAL CTA ================= -->
+  <section class="final-cta" id="demo">
+    <div class="container">
+      <h2 data-animate>Take full control of your business payments</h2>
+      <p data-animate data-animate-delay="1">Book a demo and see how Fluxa fits into your finance stack.</p>
+      <a href="#" class="btn btn-primary btn-lg" data-animate data-animate-delay="2">Request a demo</a>
+
+      <div class="cta-visual float-slow" data-animate data-animate-delay="3" aria-hidden="true">
+        <div class="mini-chart">
+          <svg viewBox="0 0 300 90" preserveAspectRatio="none">
+            <polyline points="0,70 30,60 60,65 90,40 120,48 150,25 180,35 210,15 240,22 270,8 300,18" fill="none" stroke="url(#gradLine)" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs>
+              <linearGradient id="gradLine" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#7db8ff"/>
+                <stop offset="100%" stop-color="#1c5cff"/>
+              </linearGradient>
+            </defs>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <div class="footer-brand">
+      <a href="#top" class="logo">
+        <span class="logo-mark" aria-hidden="true"></span>
+        Fluxa
+      </a>
+      <p>Payments infrastructure for B2B finance teams.</p>
+    </div>
+
+    <div class="footer-col">
+      <h5>Product</h5>
+      <a href="#product">Overview</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#faq">FAQ</a>
+    </div>
+    <div class="footer-col">
+      <h5>Company</h5>
+      <a href="#">About</a>
+      <a href="#">Careers</a>
+      <a href="#customers">Customers</a>
+    </div>
+    <div class="footer-col">
+      <h5>Resources</h5>
+      <a href="#">Docs</a>
+      <a href="#">API reference</a>
+      <a href="#">Security</a>
+    </div>
+    <div class="footer-col">
+      <h5>Legal</h5>
+      <a href="#">Privacy</a>
+      <a href="#">Terms</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>© 2026 Fluxa, Inc. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
