@@ -3,6 +3,19 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Theme (dark mode) ---------- */
+  const root = document.documentElement;
+  const themeToggle = document.getElementById('themeToggle');
+  themeToggle.setAttribute('aria-pressed', String(root.getAttribute('data-theme') === 'dark'));
+  themeToggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    themeToggle.setAttribute('aria-pressed', String(next === 'dark'));
+    try {
+      localStorage.setItem('theme', next);
+    } catch (e) {}
+  });
+
   /* ---------- Sticky header ---------- */
   const header = document.getElementById('siteHeader');
   const onScroll = () => {
