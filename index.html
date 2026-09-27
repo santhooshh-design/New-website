@@ -13,7 +13,7 @@
 <script>
 (() => {
   const stored = localStorage.getItem('theme');
-  const theme = stored || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+  const theme = stored || 'light';
   document.documentElement.setAttribute('data-theme', theme);
 })();
 </script>
@@ -187,10 +187,10 @@
   <!-- ================= STATEMENT ================= -->
   <section class="statement" id="solutions">
     <div class="container">
-      <div class="blob" data-animate aria-hidden="true"></div>
+      <div class="orb" data-animate aria-hidden="true"></div>
       <h2 data-animate>
-        From invoicing to global payouts — everything your finance
-        team needs lives in <span class="text-accent">one platform</span>.
+        Invoicing, approvals, and payouts —
+        all in <span class="text-accent">one platform</span>.
       </h2>
     </div>
   </section>
