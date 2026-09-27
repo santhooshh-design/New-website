@@ -3,6 +3,15 @@
 
   const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
+  /* ---------- Dark mode toggle ---------- */
+  const themeToggle = document.getElementById('themeToggle');
+  const root = document.documentElement;
+  themeToggle.addEventListener('click', () => {
+    const next = root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+    root.setAttribute('data-theme', next);
+    localStorage.setItem('theme', next);
+  });
+
   /* ---------- Sticky header ---------- */
   const header = document.getElementById('siteHeader');
   const onScroll = () => {
