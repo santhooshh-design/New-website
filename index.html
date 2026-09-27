@@ -10,6 +10,13 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<script>
+(() => {
+  const stored = localStorage.getItem('theme');
+  const theme = stored || 'light';
+  document.documentElement.setAttribute('data-theme', theme);
+})();
+</script>
 </head>
 <body>
 
@@ -34,6 +41,10 @@
     <div class="header-actions">
       <a href="#" class="link-btn">Log in</a>
       <a href="#demo" class="btn btn-primary btn-sm">Request a demo</a>
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="theme-toggle__icon theme-toggle__icon--sun" aria-hidden="true">☀</span>
+        <span class="theme-toggle__icon theme-toggle__icon--moon" aria-hidden="true">☾</span>
+      </button>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
         <span></span><span></span><span></span>
       </button>
@@ -176,10 +187,10 @@
   <!-- ================= STATEMENT ================= -->
   <section class="statement" id="solutions">
     <div class="container">
-      <div class="blob" data-animate aria-hidden="true"></div>
+      <div class="orb" data-animate aria-hidden="true"></div>
       <h2 data-animate>
-        From invoicing to global payouts — everything your finance
-        team needs lives in <span class="text-accent">one platform</span>.
+        Invoicing, approvals, and payouts —
+        all in <span class="text-accent">one platform</span>.
       </h2>
     </div>
   </section>
